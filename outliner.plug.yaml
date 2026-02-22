@@ -1,6 +1,14 @@
-name: hello
-functions:
-  helloWorld:
-    path: hello.ts:helloWorld
-    command:
-      name: "Say hello"
+name: outliner
+manifest:
+  functions:
+    autoBullet:
+      path: ./outliner.ts:autoBullet
+      events:
+        - editor:pageModified
+    toggleOutliner:
+      path: ./outliner.ts:toggleOutliner
+      command:
+        name: "Outliner: Toggle Mode"
+        key: "Ctrl-Alt-o"
+        requireMode: rw
+        requireEditor: page
