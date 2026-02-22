@@ -1,7 +1,8 @@
 ---
-name: Library/you/hello/PLUG
+name: Library/coderamm/outliner/PLUG
 tags: meta/library
 files:
-- hello.plug.js
+  - outliner.plug.js
 ---
-This library does A, B and C.
+
+A simple plug which turns SilverBullet into an outliner- essentially appending all new lines with an `*` to turn it into an unordered list.
